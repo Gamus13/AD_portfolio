@@ -1,0 +1,23 @@
+.services2{
+    display: grid;
+    place-content: center;
+    height: -50vh;
+}
+
+
+h2{
+    color: rgb(231, 230, 230);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 1.9rem;
+}
+
+.char2{
+    transform: translateY(115px);
+    transition: transform .5s;
+}
+
+
+
