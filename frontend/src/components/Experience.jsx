@@ -14,31 +14,78 @@ import {
   import { Scene } from "./Scene";
   
   export const scenes = [
+    // ceci c'est l'ensemble des scene que l'utilisateur peut selectionner et naviguer
     {
       path: "models/cybertruck_scene.glb",
       mainColor: "#f9c0ff",
-      name: "Cybertruck",
+      name: "Gestion de projets web",
       description:
-        "Better utility than a truck with more performance than a sports car",
+        "Site vitrine, corporate, évènementiel,e-commerce, intranet, application mobile.",
       price: 72000,
       range: 660,
     },
     {
       path: "models/model3_scene.glb",
-      mainColor: "#c0ffe1",
-      name: "Model 3",
-      description: "The car of the future",
+      mainColor: "#c0ffe1", // couleur utiliser dans la scene ou navigue l'utilisateur 
+      name: "INTÉGRATION WEB",
+      description: "Des intégrations (X)HTML / CSS respectueuses des standards du Web.",
       price: 29740,
       range: 576,
     },
     {
       path: "models/semi_scene.glb",
       mainColor: "#ffdec0",
-      name: "Semi",
-      description: "The Future of Trucking",
+      name: "DÉVELOPPEMENTS SPÉCIFIQUES",
+      description: "Des outils adaptés à votre coeur de métier, applications & solutions personnalisées.",
       price: 150000,
       range: 800,
+      
     },
+    {
+      path: "models/semi_scene.glb",
+      mainColor: "#ffdec0",
+      name: "RÉFÉRENCEMENT NATUREL",
+      description: "Affichage sémantique des informations, des pages propres pour un référencement optimal.",
+      price: 150000,
+      range: 800,
+      
+    },
+    // {
+    //   path: "models/semi_scene.glb",
+    //   mainColor: "#ffdec0",
+    //   name: "CONCEPTION GRAPHIQUE & WEBDESIGN",
+    //   description: "Logos, templates Web, plaquettes publicitaires, cartes de visite, newsletters...",
+    //   price: 150000,
+    //   range: 800,
+      
+    // },
+    // {
+    //   path: "models/semi_scene.glb",
+    //   mainColor: "#ffdec0",
+    //   name: "DYNAMISME DES PAGES",
+    //   description: "Des animations de contenu non intrusives pour embellir votre projet.",
+    //   price: 150000,
+    //   range: 800,
+      
+    // },
+    // {
+    //   path: "models/semi_scene.glb",
+    //   mainColor: "#ffdec0",
+    //   name: "INTERFACE D'ADMINISTRATION",
+    //   description: "Outils spécifiques au bon fonctionnement de votre entreprise.",
+    //   price: 150000,
+    //   range: 800,
+      
+    // },
+    // {
+    //   path: "models/semi_scene.glb",
+    //   mainColor: "#ffdec0",
+    //   name: "RESPONSIVE DESIGN",
+    //   description: "Compatible tous supports, tablette & application mobile.",
+    //   price: 150000,
+    //   range: 800,
+      
+    // },
   ];
   
   const CameraHandler = ({ slideDistance }) => {
@@ -165,7 +212,7 @@ import {
         <Grid
           position-y={-viewport.height / 2}
           sectionSize={1}
-          sectionColor={"purple"}
+          sectionColor={"blue"}
           sectionThickness={1}
           cellSize={0.5}
           cellColor={"#6f6f6f"}
