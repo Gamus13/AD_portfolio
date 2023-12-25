@@ -1,0 +1,61 @@
+/*fond image static*/
+/* .parel{
+    background-image: url("https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_640.jpg");
+    position: relative;
+    top: 600px;
+    height: 400px;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    
+} */
+
+.parel {
+    background-image: url("https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_640.jpg");
+    position: relative;
+    top: 600px; /* Ajustez la valeur en fonction de votre préférence */
+    height: 80vh; /* Utilisez 100vh pour définir la hauteur de la classe en tant que 100% de la hauteur de la fenêtre visible */
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+  }
+
+.parel img{
+    content: '';
+    background-color: black;
+    height: 300px;
+    /* height: 25px; */
+}
+
+.paralaxh1, .paralaxh2 {
+    text-align: center;
+    position: relative;
+    top: 800px;
+    
+  }
+
+  /* .paralaxh1{
+    color: red;
+  } */
+  
+  @media screen and (max-width: 768px) {
+    .paralaxh1 {
+      font-size: 24px;  
+      margin-top: 3px; /* Ajustez la valeur en fonction de votre préférence */
+    }
+    
+    .paralaxh2 {
+      font-size: 18px;
+      margin-top: 2px; /* Ajustez la valeur en fonction de votre préférence */
+    }
+  }

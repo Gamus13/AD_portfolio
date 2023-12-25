@@ -1,0 +1,23 @@
+.skillh1, .skillh2 {
+    text-align: center;
+    position: relative;
+    font-weight: 800;
+    top: 700px;
+  }
+
+  .skillh1{
+    color: rgb(168, 16, 16);
+    font-weight: 900;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skillh1 {
+      font-size: 24px; 
+      margin-top: 3px; /* Ajustez la valeur en fonction de votre préférence */
+    }
+    
+    .skillh2 {
+      font-size: 18px;
+      margin-top: 2px; /* Ajustez la valeur en fonction de votre préférence */
+    }
+  }

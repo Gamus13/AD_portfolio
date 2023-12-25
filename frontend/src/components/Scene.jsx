@@ -110,3 +110,4 @@ import {
   useGLTF.preload("/models/cybertruck_scene.glb");
   useGLTF.preload("/models/model3_scene.glb");
   useGLTF.preload("/models/semi_scene.glb");
+  // useGLTF.preload("/models/office_computer.glb");

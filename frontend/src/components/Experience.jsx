@@ -32,15 +32,15 @@ import {
       price: 29740,
       range: 576,
     },
-    {
-      path: "models/semi_scene.glb",
-      mainColor: "#ffdec0",
-      name: "DÉVELOPPEMENTS SPÉCIFIQUES",
-      description: "Des outils adaptés à votre coeur de métier, applications & solutions personnalisées.",
-      price: 150000,
-      range: 800,
+    // {
+    //   path: "models/office_005.glb",
+    //   mainColor: "#ffdec0",
+    //   name: "DÉVELOPPEMENTS SPÉCIFIQUES",
+    //   description: "Des outils adaptés à votre coeur de métier, applications & solutions personnalisées.",
+    //   price: 150000,
+    //   range: 800,
       
-    },
+    // },
     {
       path: "models/semi_scene.glb",
       mainColor: "#ffdec0",
@@ -50,42 +50,7 @@ import {
       range: 800,
       
     },
-    // {
-    //   path: "models/semi_scene.glb",
-    //   mainColor: "#ffdec0",
-    //   name: "CONCEPTION GRAPHIQUE & WEBDESIGN",
-    //   description: "Logos, templates Web, plaquettes publicitaires, cartes de visite, newsletters...",
-    //   price: 150000,
-    //   range: 800,
-      
-    // },
-    // {
-    //   path: "models/semi_scene.glb",
-    //   mainColor: "#ffdec0",
-    //   name: "DYNAMISME DES PAGES",
-    //   description: "Des animations de contenu non intrusives pour embellir votre projet.",
-    //   price: 150000,
-    //   range: 800,
-      
-    // },
-    // {
-    //   path: "models/semi_scene.glb",
-    //   mainColor: "#ffdec0",
-    //   name: "INTERFACE D'ADMINISTRATION",
-    //   description: "Outils spécifiques au bon fonctionnement de votre entreprise.",
-    //   price: 150000,
-    //   range: 800,
-      
-    // },
-    // {
-    //   path: "models/semi_scene.glb",
-    //   mainColor: "#ffdec0",
-    //   name: "RESPONSIVE DESIGN",
-    //   description: "Compatible tous supports, tablette & application mobile.",
-    //   price: 150000,
-    //   range: 800,
-      
-    // },
+    
   ];
   
   const CameraHandler = ({ slideDistance }) => {

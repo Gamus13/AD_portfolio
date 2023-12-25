@@ -18,7 +18,12 @@ ul {
 
 .main-footer{
   position: relative;
+  /* position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; */
   background: #1e2129;
+  top: 1155px;
 }
 
 #row{
@@ -142,6 +147,7 @@ ul {
   position: relative;
   background: #13151a;
   padding: 25px 0px 22px 0px;
+  top: 1150px;
 }
 
 
