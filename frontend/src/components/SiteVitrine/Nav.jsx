@@ -1,64 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import styles from './scss/base/_base.scss';
+import './scss/base/_base.scss';
+import './scss/layout/_layout.scss';
+import './scss/config/_variables.scss';
 // import styles from "./scss/base/_base.scss?inline";
 import '../../Styles/Navbar.css';
+import './scss/components/_breakpoints.scss';
+import './scss/components/_header.scss';
+function Navbars() {  
 
-function Navbars() {
-  useEffect(() => {
-    const showMenu = () => {
-      const navMenu = document.getElementById('nav-menu');
-      navMenu.classList.toggle('show-menu');
-    };
+    useEffect(() => {
+        const showMenu = () => {
+        const navMenu = document.getElementById('nav-menu');
+        navMenu.classList.toggle('show-menu');
+        };
 
-    const toggleItem = (item) => {
-      const dropdownContainer = item.querySelector('.dropdown__container');
+        const navToggle = document.getElementById('nav-toggle');
+        navToggle.addEventListener('click', showMenu);
 
-      if (item.classList.contains('show-dropdown')) {
-        dropdownContainer.removeAttribute('style');
-        item.classList.remove('show-dropdown');
-      } else {
-        dropdownContainer.style.height = dropdownContainer.scrollHeight + 'px';
-        item.classList.add('show-dropdown');
-      }
-    };
-
-    const removeDropdownStyles = () => {
-      const mediaQuery = window.matchMedia('(min-width: 1118px)');
-      const dropdownContainers = document.querySelectorAll('.dropdown__container');
-
-      if (mediaQuery.matches) {
-        dropdownContainers.forEach((container) => {
-          container.removeAttribute('style');
-        });
-
-        dropdownItems.forEach((item) => {
-          item.classList.remove('show-dropdown');
-        });
-      }
-    };
-
-    const dropdownItems = document.querySelectorAll('.dropdown__item');
-
-    dropdownItems.forEach((item) => {
-      const dropdownButton = item.querySelector('.dropdown__button');
-
-      dropdownButton.addEventListener('click', () => {
-        const showDropdown = document.querySelector('.show-dropdown');
-
-        toggleItem(item);
-
-        if (showDropdown && showDropdown !== item) {
-          toggleItem(showDropdown);
-        }
-      });
-    });
-
-    window.addEventListener('resize', removeDropdownStyles);
-
-    return () => {
-      window.removeEventListener('resize', removeDropdownStyles);
-    };
-  }, []);  
+        return () => {
+        navToggle.removeEventListener('click', showMenu);
+        };
+    }, []);
 
   return (
     <>
@@ -81,7 +43,7 @@ function Navbars() {
                             <li>
                                 <a href="#" class="nav__link">SERVICES</a>
                             </li>
-
+                                
                             {/* <!--=============== DROPDOWN 1 ===============--> */}
                             <li class="dropdown__item">                      
                                 <div class="nav__link dropdown__button">
@@ -242,10 +204,9 @@ function Navbars() {
                             </li>
 
                             <li>
-                                <a href="#" class="nav__link">À PROPOS</a>
+                                
+                                <a href="#" class="nav__link">CONNEXION</a>
                             </li>
-
-                            
 
                             {/* <!--=============== DROPDOWN 3 ===============--> */}
                             <li class="dropdown__item">                        

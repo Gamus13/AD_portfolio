@@ -1,0 +1,18 @@
+/* Styles pour les petits écrans */
+@media (max-width: 767px) {
+    .mockup-image {
+      /* Ajoutez ici les styles spécifiques pour les petits écrans */
+    }
+  }
+  
+  /* Styles pour les moyens écrans */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    img{
+      /* Ajoutez ici les styles spécifiques pour les moyens écrans */
+      width: 1200px;
+    }
+    .mockuparent{
+        position: absolute;
+        top: 245px;
+    }
+  }

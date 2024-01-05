@@ -8,6 +8,7 @@ import GuestLayout from './components/GuestLayout';
 import Navbars from './components/SiteVitrine/Nav';
 import AnimatedGallery from './components/SiteVitrine/Header';
 import WebsiteComponent from './components/SiteVitrine/Website';
+import Sidebar from './components/SiteVitrine/Admin/Sidebar';
 
 const router = createBrowserRouter([
 	
@@ -19,6 +20,17 @@ const router = createBrowserRouter([
 				{/* <Navbars/> */}
 				<WebsiteComponent/>
 				
+			</>
+		),
+	},
+
+	{
+		path: '/admin_space',
+		element: (
+			
+			<>
+				
+				{/* <Sidebar/> */}
 			</>
 		),
 	},

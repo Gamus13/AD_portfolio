@@ -5,7 +5,11 @@
     left: 0;
     width: 100%;
     box-shadow: 0 2px 8px hsla(220, 68%, 12%, .1);
-    background-color: var(--body-color);
+    // background-color: var(--body-color);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    --webkit-backdrop-filter: blur(-3px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
     z-index: var(--z-fixed);
 }
 
