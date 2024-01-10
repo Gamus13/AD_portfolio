@@ -2,12 +2,12 @@ import React from 'react';
 import AnimatedGallery from './Header';
 import Navbars from './Nav';
 import TextLoad from './Loadtext';
-
+import Apps from './Appx';
 import { Canvas } from "@react-three/fiber";
 import { Leva } from "leva";
 import { Experience } from "../Experience";
 import { Overlay } from "../Overlay";
-
+import '../../Styles/Filter.css';
 // import Particles from './ParticlesSection';
 import TextserviceLoad from './ServicesText';
 import Paralaxe from './ParalaxSection';
@@ -36,7 +36,9 @@ const WebsiteComponent = () => {
 		<Experience />
 	  </Canvas>   */}
 	  <Paralaxe/>
+	  
 	  <TitleComponent/>
+	  <Apps/>
 	  <ContactForm/>
 	  {/* <SkillComponent/> */}	
       <Footer/>
