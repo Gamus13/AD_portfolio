@@ -47,8 +47,6 @@
 
 // export default Movies;
 
-import { motion } from "framer-motion"
-
 // const Movies = ({ movies }) => {
 //   console.log('Movies data:', movies);
 //   return (
@@ -89,6 +87,7 @@ import { motion } from "framer-motion"
   //   );
   // };
   import { useEffect, useState } from "react"
+  import { motion } from "framer-motion"
 
   const Movies = ({ movies }) => {
     const [filteredMovies, setFilteredMovies] = useState(movies);
@@ -104,13 +103,23 @@ import { motion } from "framer-motion"
         initial={{ opacity: 0 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
+        style={{ position: 'relative', top: '840px',
+        '@media (min-width: 768px)': {
+          gridTemplateColumns: 'repeat(2, 1fr)',
+        },
+        '@media (min-width: 1024px)': {
+          gridTemplateColumns: 'repeat(4, 1fr)',
+        }
+       }} // Ajout du style pour déplacer la div vers le bas
+        
       >
         {filteredMovies.map(movie => (
-          <div key={movie.id}>
+          <div key={movie.id} className="resultData">
+            <img src={`http://localhost:8000/storage/${movie.image}`} alt="" />
             <h2>{movie.titre}</h2>
             <p>{movie.description}</p>
             <p>{movie.technologie}</p>
-            <img src={`http://localhost:8000/storage/${movie.image}`} alt="" />
+            
           </div>
         ))}
       </motion.div>
