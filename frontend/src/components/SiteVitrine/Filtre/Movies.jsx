@@ -89,6 +89,65 @@
   import { useEffect, useState } from "react"
   import { motion } from "framer-motion"
 
+  // const Movies = ({ movies }) => {
+  //   const [filteredMovies, setFilteredMovies] = useState(movies);
+  
+  //   useEffect(() => {
+  //     setFilteredMovies(movies);
+  //   }, [movies]);
+
+  //   const url = new URL(movie.preview);
+  //   const previewUrl = url.href;
+
+
+  
+  //   return (
+  //     <motion.div 
+  //       layout
+  //       animate={{ opacity: 1 }}
+  //       initial={{ opacity: 0 }}
+  //       exit={{ opacity: 0 }}
+  //       transition={{ duration: 0.5 }}
+  //       style={{ position: 'relative', top: '800px',
+  //       marginLeft: '20px',
+  //       marginRight: '20px',
+  //       paddingTop: '30px',
+  //      }} // Ajout du style pour déplacer la div vers le bas
+        
+  //     >
+  //       {filteredMovies.map(movie => (
+  //         <div key={movie.id} className="resultData">
+  //           <div className="imageContainer">
+  //             <img src={`http://localhost:8000/storage/${movie.image}`} alt="" />
+  //             <div className="overlay">
+  //               <div className="iconContainer">
+  //                 <span>
+  //                   <a href={previewUrl} target="_blank" rel="noopener noreferrer">
+  //                     <i className="fa fa-play"></i>
+  //                   </a>
+  //                   <span className="iconSubtitle">Lire</span>
+  //                 </span>
+  //                 <span>
+  //                   <a href={movie.repository} target="_blank" rel="noopener noreferrer">
+                    
+  //                     <i className="fa fa-circle"></i>
+  //                   </a>
+  //                   <span className="iconSubtitle">Info</span>
+  //                 </span>
+
+  //               </div>
+  //             </div>
+  //           </div>
+  //           <h2>{movie.titre}</h2>
+  //           <p>{movie.description}</p>
+  //           {/* <p>{movie.technologie}</p> */}
+  //           <div className="tech">{movie.technologie}</div>
+  //         </div>
+  //       ))}
+  //     </motion.div>
+  //   );
+  // };
+
   const Movies = ({ movies }) => {
     const [filteredMovies, setFilteredMovies] = useState(movies);
   
@@ -103,25 +162,54 @@
         initial={{ opacity: 0 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
-        style={{ position: 'relative', top: '840px',
-        '@media (min-width: 768px)': {
-          gridTemplateColumns: 'repeat(2, 1fr)',
-        },
-        '@media (min-width: 1024px)': {
-          gridTemplateColumns: 'repeat(4, 1fr)',
-        }
-       }} // Ajout du style pour déplacer la div vers le bas
-        
+        style={{ 
+          position: 'relative',
+          top: '800px',
+          marginLeft: '20px',
+          marginRight: '20px',
+          paddingTop: '30px',
+        }}
       >
-        {filteredMovies.map(movie => (
-          <div key={movie.id} className="resultData">
-            <img src={`http://localhost:8000/storage/${movie.image}`} alt="" />
-            <h2>{movie.titre}</h2>
-            <p>{movie.description}</p>
-            <p>{movie.technologie}</p>
-            
-          </div>
-        ))}
+        {/* ce script est utilisé pour que chaque clic sur l'icône ouvre le lien vers une autre page pour éviter localhost:3000//www... */}
+        {filteredMovies.map(movie => {
+          let previewUrl = movie.preview;
+          let repositoryUrl = movie.repository;
+  
+          if (!repositoryUrl.startsWith('http://') && !repositoryUrl.startsWith('https://')) {
+            repositoryUrl = `https://${repositoryUrl}`;
+          }
+  
+          if (!previewUrl.startsWith('http://') && !previewUrl.startsWith('https://')) {
+            previewUrl = `http://${previewUrl}`;
+          }
+  
+          return (
+            <div key={movie.id} className="resultData">
+              <div className="imageContainer">
+                <img src={`http://localhost:8000/storage/${movie.image}`} alt="" />
+                <div className="overlay">
+                  <div className="iconContainer">
+                    <span>
+                      <a href={previewUrl} target="_blank" rel="noopener noreferrer">
+                        <i className="fa fa-play"></i>
+                      </a>
+                      <span className="iconSubtitle">Live</span>
+                    </span>
+                    <span>
+                      <a href={repositoryUrl} target="_blank" rel="noopener noreferrer">
+                        <i className="fa fa-circle"></i>
+                      </a>
+                      <span className="iconSubtitle">Code</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <h2>{movie.titre}</h2>
+              <p>{movie.description}</p>
+              <div className="tech">{movie.technologie}</div>
+            </div>
+          );
+        })}
       </motion.div>
     );
   };
