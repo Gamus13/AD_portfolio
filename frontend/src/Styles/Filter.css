@@ -37,7 +37,7 @@ h2 {
   min-width: 5rem;
   padding: 0.8rem 1rem;
   position: relative;
-  top: 750px;
+  top: 780px;
   background: whitesmoke;
   /* text-shadow: 2px 2px black; */
   border-radius: 0.5rem;
@@ -99,3 +99,9 @@ button.active {
   padding-left: 10px;
   justify-content: center;
 }
+
+/* #iconSubtitle{
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+} */

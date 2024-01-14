@@ -31,8 +31,9 @@ const Footer = () => {
                     <li><a href="#" id='txtfoos'>UX/UI Design</a></li>
                     <li><a href="#" id='txtfoos'>Front-End</a></li>
                     <li><a href="#" id='txtfoos'>Back-End</a></li>
-                    <li><a href="#" id='txtfoos'>Animal Saves</a></li>
-                    <li><a href="#" id='txtfoos'>Help Orphan</a></li>
+                    <li><a href="#" id='txtfoos'>WebDesign</a></li>
+                    <li><a href="#" id='txtfoos'>Conception</a></li>
+                    <li><a href="#" id='txtfoos'>Aide</a></li>
                   </ul>
                 </div>
               </div>
@@ -40,7 +41,7 @@ const Footer = () => {
                 <div className="contact-widget footer-widget">
                   <div className="footer-title">Contacts</div>
                   <div className="text">
-                    <p id='txtfooter'>Lorem Ipsum, simply dummy text, printing, Chandigarh</p>
+                    <p id='txtfooter'>Je reside au cameroun et reste ouvert a relever de nouveau defis</p>
                     <p id='txtfooter'>+237 696666618</p>
                     <p id='txtfooter'>marcelnoumsi8@gmail.com</p>
                   </div>

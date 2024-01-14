@@ -193,13 +193,13 @@
                       <a href={previewUrl} target="_blank" rel="noopener noreferrer">
                         <i className="fa fa-play"></i>
                       </a>
-                      <span className="iconSubtitle">Live</span>
+                      <span className="iconSubtitle" id="iconSubtitle">Live</span>
                     </span>
                     <span>
                       <a href={repositoryUrl} target="_blank" rel="noopener noreferrer">
-                        <i className="fa fa-circle"></i>
+                        <i className="fa fa-code"></i>
                       </a>
-                      <span className="iconSubtitle">Code</span>
+                      <span className="iconSubtitle" id="iconSubtitle">Code</span>
                     </span>
                   </div>
                 </div>

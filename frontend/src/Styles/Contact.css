@@ -5,6 +5,12 @@
     top: 1094px;
   }
   
+   /* #contact {
+    position: relative;
+    top: -60px; /* Ajustez cette valeur en fonction de la hauteur de votre footer 
+    width: 100%;
+    height: 100%;
+  } */
   .section-header {
     text-align: center;
     margin: 0 auto;

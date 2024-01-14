@@ -16,6 +16,8 @@ import SkillComponent from './Skill';
 import ContactForm from './Contact';
 import Footer from './FooterSite';
 import MockupImage from './MockupImg';
+import TitlesProject from './TitresProjet';
+import Langagetitre from './Langagetitle';
 
 const WebsiteComponent = () => {
   return (
@@ -36,9 +38,11 @@ const WebsiteComponent = () => {
 		<Experience />
 	  </Canvas>   */}
 	  <Paralaxe/>
-	  
+	  <Langagetitre/>
 	  <TitleComponent/>
+	  <TitlesProject/>
 	  <Apps/>
+
 	  <ContactForm/>
 	  {/* <SkillComponent/> */}	
       <Footer/>

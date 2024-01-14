@@ -18,13 +18,19 @@ ul {
 
 .main-footer{
   position: relative;
-  /* position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%; */
   background: #1e2129;
   top: 1155px;
 }
+
+/* .main-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #1e2129;
+  padding: 20px;
+  color: #fff;
+} */
 
 #row{
     display: flex;
