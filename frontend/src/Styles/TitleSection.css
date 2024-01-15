@@ -1,32 +1,31 @@
-.skillh4, .skillh5 {
+.soft1, .soft2 {
     text-align: center;
     position: relative;
     font-weight: 800;
-    top: 2550px;
+    top: -900px;
   }
 
-  .skillh4{
+  .soft1{
     color: rgb(168, 16, 16);
     font-weight: 900;
   }
+
+  .soft3{
+    text-align: center;
+    position: relative;
+    font-weight: 300;
+    color: whitesmoke;
+    top: 2250px;
+  }
   
   @media screen and (max-width: 768px) {
-    .skillh4 {
+    .soft1 {
       font-size: 24px; 
       margin-top: 3px; /* Ajustez la valeur en fonction de votre préférence */
     }
     
-    .skillh5 {
+    .soft2 {
       font-size: 18px;
       margin-top: 2px; /* Ajustez la valeur en fonction de votre préférence */
-    }
-
-    @media screen and (max-width: 600px) {
-        .skillh4, .skillh5 {
-            text-align: center;
-            position: relative;
-            font-weight: 800;
-            top: 4400px;
-          }
     }
   }

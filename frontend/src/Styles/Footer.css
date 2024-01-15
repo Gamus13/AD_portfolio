@@ -19,7 +19,7 @@ ul {
 .main-footer{
   position: relative;
   background: #1e2129;
-  top: 1155px;
+  top: 3155px;
 }
 
 /* .main-footer {
@@ -153,7 +153,7 @@ ul {
   position: relative;
   background: #13151a;
   padding: 25px 0px 22px 0px;
-  top: 1150px;
+  top: 3150px;
 }
 
 
@@ -212,6 +212,26 @@ ul {
 
     .footer-content .contact-widget .footer-title{
         margin-bottom: 25px;
+    }
+
+    .main-footer{
+      position: relative;
+      background: #1e2129;
+      top: 4985px;
+
+      /* position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #1e2129;
+      padding: 20px; */
+    }
+
+    .footer-bottom{
+      position: relative;
+      background: #13151a;
+      padding: 25px 0px 22px 0px;
+      top: 4985px;
     }
 
     /* .footer-bottom .footer-nav #txtfooss{

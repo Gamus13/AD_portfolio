@@ -18,6 +18,9 @@ import Footer from './FooterSite';
 import MockupImage from './MockupImg';
 import TitlesProject from './TitresProjet';
 import Langagetitre from './Langagetitle';
+import PackList from './PackageList';
+import TitrePackage from './TitrePackage';
+import TitleSection from './TitreSection';
 
 const WebsiteComponent = () => {
   return (
@@ -40,9 +43,11 @@ const WebsiteComponent = () => {
 	  <Paralaxe/>
 	  <Langagetitre/>
 	  <TitleComponent/>
+	  <TitrePackage/>
+	  <PackList/>
 	  <TitlesProject/>
 	  <Apps/>
-
+	  <TitleSection/>
 	  <ContactForm/>
 	  {/* <SkillComponent/> */}	
       <Footer/>

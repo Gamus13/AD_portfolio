@@ -13,10 +13,25 @@ function MockupImage() {
         
       }}
     >
+      <style>
+        {`
+          @media screen and (max-width: 600px) {
+            .mockupenft {
+              position: relative;
+              top: 367px;
+            }
+            #mockupenft{
+              height: 450px;
+            }
+          }
+        `}
+      </style>
+
       <img
         className='mockupenft'
         src={ResponsiveDevice}
         alt="Mockup"
+        id='mockupenft'
         style={{
           maxWidth: '100%',
           maxHeight: '100%',

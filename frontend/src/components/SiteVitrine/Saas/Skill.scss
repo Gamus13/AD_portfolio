@@ -164,6 +164,13 @@
     }
   }
 
+  @media screen and (max-width: 600px) {
+    .section {
+      position: relative;
+      top: 4350px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .section {
         display: flex;

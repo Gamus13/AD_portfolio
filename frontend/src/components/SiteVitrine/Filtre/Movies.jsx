@@ -163,13 +163,25 @@
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
         style={{ 
+          // la position pour la div qui affiche les datas
           position: 'relative',
-          top: '800px',
+          top: '2690px',
           marginLeft: '20px',
           marginRight: '20px',
           paddingTop: '30px',
+         
         }}
       >
+        <style>
+        {`
+          @media screen and (max-width: 600px) {
+            .resultData {
+              position: relative;
+              top: 1790px;
+            }
+          }
+        `}
+      </style>
         {/* ce script est utilisé pour que chaque clic sur l'icône ouvre le lien vers une autre page pour éviter localhost:3000//www... */}
         {filteredMovies.map(movie => {
           let previewUrl = movie.preview;

@@ -1,0 +1,169 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap');
+// Colors
+$hcolor: #545454;
+$text-color: #B7B7B7;
+$packColor: #F9F9F9;
+$highlightColor: red;
+
+.containerY {
+  position: relative;
+  top: 2300px;
+  margin:0 auto;
+  width:80%;
+}
+.packList {
+  width:90%;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  min-height:20px;
+  font-family: 'Poppins', sans-serif;
+  .packContainer {
+      color:$text-color;
+      display:block;
+      width: 33.33%;
+      text-align:center;
+      position:relative;
+      .packRadio {
+        position:absolute;
+        opacity:0;
+        display:none;
+        &:checked + .pack {
+        -webkit-box-shadow: 0px 0px 0px 3px $highlightColor;
+        -moz-box-shadow: 0px 0px 0px 3px  $highlightColor;
+        box-shadow: 0px 0px 0px 3px  $highlightColor;
+          &::before {
+           content: url("data:image/svg+xml; utf8, <svg version='1.1'  fill='white' width='14px' id='Capa_1' xmlns='http://www.w3.org/2000/svg'  xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 236.988 236.988' style='enable-background:new 0 0 236.988 236.988;' xml:space='preserve'><polygon points='198.098,24.326 87.543,134.881 38.891,86.229 0,125.121 87.543,212.662 236.988,63.217 '/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>");
+            position:absolute;
+            display:block;
+            right:33px;
+            top:29px;
+            z-index: 10;
+          }
+          &::after {
+            background:$highlightColor;
+          }
+        .priceY {
+          b {
+            color:  $highlightColor;
+          }
+        }
+      }
+    }
+    .pack {
+      background:$packColor;
+      display:block;
+      margin:1rem;
+      padding:1rem;
+      border-radius:8px;
+      cursor:pointer;
+      transition: all .4s  ease-in;
+      &::before {
+        transition: all .4s ease-in;
+      }
+      &::after {
+        content:' ';
+        background:white;
+        position:absolute;
+        border-radius:4px;
+        width:20px;
+        height:20px;
+        top:30px;
+        right:30px;
+        transition: all .4s  ease-in;
+      }
+      .headerY {
+        h2 { 
+          font-size: 1.5em;
+          color:$hcolor;
+        }
+      }
+      .priceY {
+        margin-top:4rem;
+        b {
+          font-size: 2em;
+          display:block;
+          color:$hcolor;
+        }
+      }
+      .features {
+        p {
+          padding:3rem 3rem;
+        }
+        ul {
+          padding:0 3rem;
+          text-align:left;
+          list-style:none;
+          li {
+            position:relative;
+            margin-left:40px;
+            &.active {
+              color:$hcolor;
+              &::before {
+                display:block;
+                position:absolute;
+                left:-20px;
+                content: url("data:image/svg+xml; utf8, <svg version='1.1'  fill='rgb(0,144,255)' width='12px' id='Capa_1' xmlns='http://www.w3.org/2000/svg'  xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 236.988 236.988' style='enable-background:new 0 0 236.988 236.988;' xml:space='preserve'><polygon points='198.098,24.326 87.543,134.881 38.891,86.229 0,125.121 87.543,212.662 236.988,63.217 '/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>");
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Media Screen */
+@media screen and (max-width: 1649px) {
+  .packList {
+    .packContainer {
+        .pack {
+          margin:0.45rem;
+          padding:0.45rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1499px) {
+  .packList {
+    width:100%;
+    .packContainer {
+        .pack {
+          margin:0.25rem;
+          padding:0.25rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1210px) {
+  .containerY {
+    width:95%;
+  }
+  .packList {
+    .packContainer {
+        width:50%;
+        &:nth-child(2) { 
+          order: -1; 
+          width:100%;
+        }
+      .pack {
+        .priceY {
+          margin-top:2rem;
+        }
+        .features {
+          p {
+            display:none;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .packList {
+    .packContainer {
+        width:100%;
+    }
+  }
+}

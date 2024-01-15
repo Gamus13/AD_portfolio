@@ -90,9 +90,9 @@ const ContactForm = () => {
           <hr style={{ marginLeft: '-21px', marginTop: '11px', }} />
           <ul className="social-media-list">
             <li><a href="#" target="_blank" className="contact-icon"><i className="fa fa-coffee" aria-hidden="true"></i></a></li>
-            <li><a href="#" target="_blank" className="contact-icon"><i className="fa fa-DESIGN" aria-hidden="true"></i></a></li>
+            <li><a href="#" target="_blank" className="contact-icon"><i className="fa fa-user" aria-hidden="true"></i></a></li>
             <li><a href="#" target="_blank" className="contact-icon"><i className="fa fa-code" aria-hidden="true"></i></a></li>
-            <li><a href="#" target="_blank" className="contact-icon"><i className="fa fa-delivery" aria-hidden="true"></i></a></li>
+            <li><a href="#" target="_blank" className="contact-icon"><i className="fa fa-cloud" aria-hidden="true"></i></a></li>
           </ul>
           <hr style={{ marginLeft: '-21px', marginTop: '31px', }} />
           <div className="copyright" style={{ marginLeft: '-21px', marginTop: '31px', }}>&copy; ALL OF THE RIGHTS RESERVED</div>
